@@ -7,4 +7,4 @@ As the name suggests, this is an introductory course in computer science. It's m
 
 The course is focussed on Python script development. The assignments cover unit testing, Pydoc for documentation, file I/O, program complexity, k-means clustering, and an intro to objects and OOP.
 
-I received a 100% on each of these assignments, and ended the course with an A+.
+I received 100% on each of these assignments, and ended the course with an A+.
