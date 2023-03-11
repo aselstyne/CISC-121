@@ -1,5 +1,5 @@
 # CISC-121
-All the assignments I completed in CISC-121 (Intro to Computer Science I) course at Queen's University in Fall 2021.
+All the assignments I completed in CISC-121 (Intro to Computer Science I) at Queen's University in Fall 2021.
 
 # About CISC-121
 
