@@ -9,7 +9,8 @@
 # Vigenere Encryption
 
 def make_alpha(plain):
-    ''' make_alpha strips all non-alphabetical characters from the specified string '''
+    ''' make_alpha strips all non-alphabetical characters from the 
+    specified string '''
     index = 0
     while (index < len(plain)):
         if (plain[index].isalpha() == False):
