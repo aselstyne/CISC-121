@@ -1,0 +1,65 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head><title>Python: module AA_Assign3</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head><body bgcolor="#f0f0f8">
+
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="heading">
+<tr bgcolor="#7799ee">
+<td valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial">&nbsp;<br><big><big><strong>AA_Assign3</strong></big></big></font></td
+><td align=right valign=bottom
+><font color="#ffffff" face="helvetica, arial"><a href=".">index</a><br><a href="file:c%3A%5Cusers%5Calexa%5Cdocuments%5Cschool%5Cfirst%20year%282021-2022%29%5Ccisc%20121%20-%20intro%20to%20comp%20sci%20i%5Cassignment%203%5Caa_assign3.py">c:\users\alexa\documents\school\first year(2021-2022)\cisc 121 - intro to comp sci i\assignment 3\aa_assign3.py</a></font></td></tr></table>
+    <p><tt>This&nbsp;program&nbsp;will&nbsp;prompt&nbsp;the&nbsp;user&nbsp;for&nbsp;a&nbsp;folder&nbsp;of&nbsp;text&nbsp;files,<br>
+then&nbsp;calculate&nbsp;the&nbsp;jaccard&nbsp;similarity&nbsp;values&nbsp;for&nbsp;all&nbsp;of&nbsp;the&nbsp;text&nbsp;files<br>
+and&nbsp;output&nbsp;the&nbsp;best&nbsp;matches.</tt></p>
+<p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#aa55cc">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Modules</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#aa55cc"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><table width="100%" summary="list"><tr><td width="25%" valign=top><a href="glob.html">glob</a><br>
+</td><td width="25%" valign=top><a href="tkinter.html">tkinter</a><br>
+</td><td width="25%" valign=top></td><td width="25%" valign=top></td></tr></table></td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#eeaa77">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Functions</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#eeaa77"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl><dt><a name="-after_button"><strong>after_button</strong></a>()</dt><dd><tt>Triggered&nbsp;when&nbsp;the&nbsp;button&nbsp;is&nbsp;hit,&nbsp;loads&nbsp;the&nbsp;file&nbsp;list.<br>
+Calls&nbsp;the&nbsp;<a href="#-make_sets">make_sets</a>()&nbsp;function&nbsp;when&nbsp;file&nbsp;is&nbsp;successfully&nbsp;open</tt></dd></dl>
+ <dl><dt><a name="-calc_jaccard"><strong>calc_jaccard</strong></a>(words)</dt><dd><tt>Calculates&nbsp;all&nbsp;the&nbsp;jaccard&nbsp;similarities&nbsp;for&nbsp;the&nbsp;given&nbsp;list&nbsp;of&nbsp;sets<br>
+Param:&nbsp;a&nbsp;list&nbsp;of&nbsp;sets,&nbsp;each&nbsp;set&nbsp;being&nbsp;the&nbsp;words&nbsp;from&nbsp;a&nbsp;file<br>
+Outputs&nbsp;to&nbsp;global&nbsp;variables&nbsp;most_similar&nbsp;and&nbsp;jaccard_scores</tt></dd></dl>
+ <dl><dt><a name="-make_sets"><strong>make_sets</strong></a>()</dt><dd><tt>Turns&nbsp;files&nbsp;into&nbsp;an&nbsp;array&nbsp;of&nbsp;sets&nbsp;of&nbsp;words,&nbsp;one&nbsp;for&nbsp;each&nbsp;document.<br>
+Returns&nbsp;a&nbsp;lists&nbsp;of&nbsp;sets,&nbsp;each&nbsp;set&nbsp;containing&nbsp;all&nbsp;the&nbsp;words&nbsp;from&nbsp;a&nbsp;doc<br>
+Calls&nbsp;the&nbsp;<a href="#-calc_jaccard">calc_jaccard</a>()&nbsp;function&nbsp;to&nbsp;calculate&nbsp;jaccard&nbsp;scores</tt></dd></dl>
+</td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#55aa55">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Data</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#55aa55"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><strong>col_0_label</strong> = &lt;tkinter.Label object .!label2&gt;<br>
+<strong>col_1_label</strong> = &lt;tkinter.Label object .!label3&gt;<br>
+<strong>divider</strong> = &lt;tkinter.Label object .!label106&gt;<br>
+<strong>horiz_line</strong> = &lt;tkinter.Label object .!label5&gt;<br>
+<strong>horiz_line2</strong> = &lt;tkinter.Label object .!label6&gt;<br>
+<strong>jaccard_scores</strong> = [0.3102318548387097, 0.3626444159178434, 0.3586261980830671, 0.36604323536555744, 0.4075359444719881, 0.4145562885720366, 0.4472742580509366, 0.3638814016172507, 0.3756056808688388, 0.3967345207803223, 0.3935784567581564, 0.3756443298969072, 0.3805455142951035, 0.33558379666401905, 0.3385036496350365, 0.3698377581120944, 0.36377603277569137, 0.33893468611287253, 0.32981927710843373, 0.38906336597081104, ...]<br>
+<strong>line</strong> = 'without'<br>
+<strong>most_similar</strong> = [1, 5, 1, 1, 6, 1, 4, 8, 7, 12, 11, 10, 7, 14, 13, 7, 7, 7, 3, 5, ...]<br>
+<strong>open_folder</strong> = &lt;tkinter.Button object .!button&gt;<br>
+<strong>pair</strong> = 24<br>
+<strong>stop_words</strong> = {'a', 'about', 'above', 'after', 'again', 'against', ...}<br>
+<strong>stop_words_file</strong> = &lt;_io.TextIOWrapper name='C:\\Users\\Alexa\\Docum...nt 3\\stop_words.txt' mode='r' encoding='cp1252'&gt;<br>
+<strong>text1</strong> = 'Wonder_Tales_Tibet.txt'<br>
+<strong>text1_label</strong> = &lt;tkinter.Label object .!label103&gt;<br>
+<strong>text2</strong> = 'Indian_Fairy_Tales.txt'<br>
+<strong>text2_label</strong> = &lt;tkinter.Label object .!label104&gt;<br>
+<strong>text3_label</strong> = &lt;tkinter.Label object .!label105&gt;<br>
+<strong>text_files</strong> = [r'C:/Users/Alexa/Documents/SCHOOL/FIRST YEAR(2021-...Assignment 3/texts\Adventures_Sherlock_Holmes.txt', r'C:/Users/Alexa/Documents/SCHOOL/FIRST YEAR(2021-...o Comp Sci I/Assignment 3/texts\Age_Innocence.txt', r'C:/Users/Alexa/Documents/SCHOOL/FIRST YEAR(2021-...omp Sci I/Assignment 3/texts\Alice_Wonderland.txt', r'C:/Users/Alexa/Documents/SCHOOL/FIRST YEAR(2021-...o Comp Sci I/Assignment 3/texts\Flint_Feather.txt', r'C:/Users/Alexa/Documents/SCHOOL/FIRST YEAR(2021-...ignment 3/texts\Folk_Stories_Southern_Nigeria.txt', r'C:/Users/Alexa/Documents/SCHOOL/FIRST YEAR(2021-...to Comp Sci I/Assignment 3/texts\Great_Gatsby.txt', r'C:/Users/Alexa/Documents/SCHOOL/FIRST YEAR(2021-...p Sci I/Assignment 3/texts\Indian_Fairy_Tales.txt', r'C:/Users/Alexa/Documents/SCHOOL/FIRST YEAR(2021-...ro to Comp Sci I/Assignment 3/texts\Jane_Eyre.txt', r'C:/Users/Alexa/Documents/SCHOOL/FIRST YEAR(2021-...Sci I/Assignment 3/texts\Journey_Centre_Earth.txt', r'C:/Users/Alexa/Documents/SCHOOL/FIRST YEAR(2021-...mp Sci I/Assignment 3/texts\Legends_Vancouver.txt', r'C:/Users/Alexa/Documents/SCHOOL/FIRST YEAR(2021-... Sci I/Assignment 3/texts\LMM_Short_Stories_1.txt', r'C:/Users/Alexa/Documents/SCHOOL/FIRST YEAR(2021-... Sci I/Assignment 3/texts\LMM_Short_Stories_2.txt', r'C:/Users/Alexa/Documents/SCHOOL/FIRST YEAR(2021-... Comp Sci I/Assignment 3/texts\Moccasin_Maker.txt', r'C:/Users/Alexa/Documents/SCHOOL/FIRST YEAR(2021-... Sci I/Assignment 3/texts\Myths_Legends_China.txt', r'C:/Users/Alexa/Documents/SCHOOL/FIRST YEAR(2021-... Sci I/Assignment 3/texts\Myths_Legends_Japan.txt', r'C:/Users/Alexa/Documents/SCHOOL/FIRST YEAR(2021-...signment 3/texts\Narrative_Frederick_Douglass.txt', r'C:/Users/Alexa/Documents/SCHOOL/FIRST YEAR(2021-... Sci I/Assignment 3/texts\Poirot_Investigates.txt', r'C:/Users/Alexa/Documents/SCHOOL/FIRST YEAR(2021-...Comp Sci I/Assignment 3/texts\Pride_Prejudice.txt', r'C:/Users/Alexa/Documents/SCHOOL/FIRST YEAR(2021-...ntro to Comp Sci I/Assignment 3/texts\Prophet.txt', r'C:/Users/Alexa/Documents/SCHOOL/FIRST YEAR(2021-...o Comp Sci I/Assignment 3/texts\Secret_Garden.txt', ...]<br>
+<strong>window</strong> = &lt;tkinter.Tk object .&gt;</td></tr></table>
+</body></html>
