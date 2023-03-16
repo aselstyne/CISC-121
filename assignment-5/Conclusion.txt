@@ -1,0 +1,6 @@
+In my tests, out of 600 trials, radix sort was faster than merge sort 100% of the time. 
+It was on average 0.015 seconds faster than merge sort, which is about a 25% improvement.
+If you increase the magnitude of the range we're dealing with, however, to [1,000,000, 9,999,999], then you find that merge sort 
+wins about 33% percent of the time.
+This suggests that because radix sort does significantly more work for each increase in the number of digits present, while it is faster
+for lists of our magnitude, if you had a data set with larger numbers merge sort may be the better choice.

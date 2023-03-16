@@ -1,0 +1,24 @@
+Top 10 Restuarants:
+1: The Spicy Trumpet    Score: 275
+2: Enigma       Score: 243
+3: Vertigo      Score: 221
+4: Drifters     Score: 205
+5: The Private Exhibit  Score: 205
+6: The Beach Chimney    Score: 201
+7: The Lighthouse       Score: 191
+8: The Modern Salmon    Score: 191
+9: Midnight     Score: 178
+10: Gastrognome Score: 175
+
+
+Top 10 Customers:
+1: Ned Berg     Score: 233.66666666666666
+2: Roma Davidson        Score: 224.0
+3: Marshall Cantrell    Score: 219.0
+4: Homer Molina Score: 215.0
+5: Alec Allison Score: 214.25
+6: Aniela Lancaster     Score: 212.0
+7: Jason Richards       Score: 212.0
+8: Albi Serrano Score: 211.2
+9: Martyn Hassan        Score: 209.4
+10: Hanna Lu    Score: 207.75
